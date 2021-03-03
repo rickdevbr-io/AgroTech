@@ -23,13 +23,13 @@ Back-end:
 # Executando o projeto :computer:
 - Passo1: Escolha escolha a pasta para download do projeto e execute o clone;
 ```
-git clone https://github.com/rickdevbr-io/gestaoagrotech.git
+git clone https://github.com/rickdevbr-io/AgroTech
 ```
-- Passo2: Dentro da pasta gestaoagrotech\front\front-gestaoagrotech, instale o node module caso não exista a pasta;
+- Passo2: Dentro da pasta Agrotech\front\front-agro, instale o node module caso não exista a pasta;
 ```
 npm install
 ```
-- Passo3: Dentro da pasta front-gestaoagrotech execute o comando de start;
+- Passo3: Dentro da pasta front-agro execute o comando de start;
 ```
 npm run start
 ```
