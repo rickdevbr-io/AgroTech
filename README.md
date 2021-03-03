@@ -1,7 +1,7 @@
 # Sobre :blue_book:
 Desenvolver uma solução para o agronegócio que coleta dados via sensores de temperatura e umidade. Esses sensores ficarão instalados em um drone com uma altíssima autonomia
 de energia, pois conta com pequenos, porém muito eficientes painéis fotovoltaicos.
-A cada 10 segundos são enviados para o message broker os dados de temperatura e umidade capturado naquele instante. Além da primeira função também é possível acionar o rastreamento do drone. Esta funcionalidade resulta na localização do equipamento em um mapa.
+A cada 10 segundos são enviados para o message broker os dados de temperatura e umidade capturado naquele instante. Além da primeira função também é possível acionar o rastreamento do drone. Esta funcionalidade resulta na localização do equipamento em um mapa. A estruturação do código é em MVC cujos packages são separados por contexto de negócio, onde a codificação foi feita seguindo as exigências: codificação de visualização do desenvolvedor em inglês, texto de exibição para o cliente em português e seguir os principios S(Single Responsibility Principle) e O (Open Closed Principle) do paradigma O.O. Por familiaridade a linguagem adotada foi o java 8 com maven conectando-se ao Postgresql, um banco relacional open source. Para facilitar no gerenciamento dos scripts em banco foi escolhido o Flyway e para documentação da API o Swagger. Para praticar a ideia de low code foi usado o Lombok junto ao SpringBoot. Na comunicação com o cliente via e-mail foi escolhida a G-MAIL API, onde possui uma integração e segurança de autenticação já validada pelo mercado.
 
 # Diagrama :gear:
 ![Database Schema](wiki/diagram/GestãoAgroTech.svg)
