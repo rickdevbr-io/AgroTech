@@ -1,0 +1,57 @@
+.mat-slider{
+  width: 100%;
+}
+
+.mat-slider-temperatura{
+  padding-right: 25px;
+}
+
+.mat-slider-umidade{
+  padding-right: 10px;
+}
+
+.mat-card{
+  width: min-content;
+}
+
+.mat-card-background-image{
+  background-image: url("imagem/drone-2.jpg");
+}
+
+.green-button{
+  color: white;
+  background-color: green;
+}
+
+.input-text{
+  width: 350px;
+  color: white;
+}
+
+.input-text-search{
+  width: 325px;
+  color: white;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #6C7A89;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("imagem/Brasil-Agrícola.jpg");
+}
+
+.center-button{
+  width: 350px;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.mouse-click{
+  cursor: pointer;
+}
