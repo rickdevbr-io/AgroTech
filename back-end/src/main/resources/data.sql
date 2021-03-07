@@ -1,11 +1,11 @@
 DROP TABLE IF EXISTS DRONES;
  
-CREATE TABLE DRONES(
-  id bigint AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS DRONES(
+  id SERIAL PRIMARY KEY,
   latitude varchar(15) NOT NULL,
   longitude varchar(15) NOT NULL,
-  temperatura tinyint NOT NULL,
-  umidade tinyint NOT NULL
+  temperatura integer NOT NULL,
+  umidade integer NOT NULL
 );
 
 INSERT INTO DRONES(latitude, longitude, temperatura, umidade) VALUES

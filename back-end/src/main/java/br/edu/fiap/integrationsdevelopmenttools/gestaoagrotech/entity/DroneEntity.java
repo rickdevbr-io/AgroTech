@@ -8,13 +8,14 @@ import javax.persistence.*;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
-@Table(name = "DRONES")
+@Table(name = "drones")
 @Getter
 @Setter
 public class DroneEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name="id")
     private Long id;
     private String latitude;
     private String longitude;

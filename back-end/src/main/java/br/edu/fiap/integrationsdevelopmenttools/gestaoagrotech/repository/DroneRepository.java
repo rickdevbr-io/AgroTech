@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface DroneRepository extends JpaRepository<DroneEntity, Long> {
-    @Query(value = "SELECT top 1 * from DRONES where id = :id", nativeQuery = true)
+    @Query(value = "SELECT * from DRONES where id = :id limit 10", nativeQuery = true)
     Optional<DroneEntity> findDrone(Long id);
 
     @Override
