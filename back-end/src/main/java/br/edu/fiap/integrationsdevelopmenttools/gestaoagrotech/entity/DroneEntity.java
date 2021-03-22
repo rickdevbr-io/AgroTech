@@ -1,5 +1,6 @@
 package br.edu.fiap.integrationsdevelopmenttools.gestaoagrotech.entity;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @Table(name = "drones")
 @Getter
 @Setter
+@Builder
 public class DroneEntity {
 
     @Id

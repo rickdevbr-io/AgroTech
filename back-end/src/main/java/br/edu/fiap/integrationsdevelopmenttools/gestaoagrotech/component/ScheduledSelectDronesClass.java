@@ -32,6 +32,11 @@ public class ScheduledSelectDronesClass {
         this.droneService = droneService;
     }
 
+    ScheduledSelectDronesClass(DroneService droneService, KafkaTemplate<String, String> kafkaTemplate) {
+        this.droneService = droneService;
+        this.kafkaTemplate = kafkaTemplate;
+    }
+
     @Scheduled(fixedDelay = 60000)
     public void scheduledUpdateDrones() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();

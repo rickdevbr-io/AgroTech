@@ -41,12 +41,12 @@ public class ScheduledUpdateDronesClass {
         List<DroneEntity> listaDrones = droneService.findAll();
 
         for (DroneEntity item : listaDrones) {
-            DroneUpdateDTO droneUpdateDTO = new DroneUpdateDTO();
-
-            droneUpdateDTO.setLatitude(preparaLatitude());
-            droneUpdateDTO.setLongitude(preparaLongitude());
-            droneUpdateDTO.setTemperatura((int) (Math.random() * (temperaturaMax - temperaturaMin + 1) + temperaturaMin));
-            droneUpdateDTO.setUmidade((int) (Math.random() * (porcentagemMax - valorMin + 1) + valorMin));
+            DroneUpdateDTO droneUpdateDTO = DroneUpdateDTO.builder()
+                    .latitude(preparaLatitude())
+                    .longitude(preparaLongitude())
+                    .temperatura((int) (Math.random() * (temperaturaMax - temperaturaMin + 1) + temperaturaMin))
+                    .umidade((int) (Math.random() * (porcentagemMax - valorMin + 1) + valorMin))
+                    .build();
 
             droneService.update(item.getId(), droneUpdateDTO);
         }
