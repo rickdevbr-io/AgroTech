@@ -19,6 +19,10 @@ public class ProducerController {
 
     private static final String TOPIC = "gestaoagrotech";
 
+    ProducerController(KafkaTemplate<String, String> kafkaTemplate){
+        this.kafkaTemplate = kafkaTemplate;
+    }
+
     @PostMapping("/publish")
     public String publishMessage(@RequestBody DroneJsonDTO droneJsonDTO) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();

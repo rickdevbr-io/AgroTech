@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @ConfigurationProperties
 public class ConsumerService {
     private final EmailService emailService;
-    private static final String MAIL = "emaildestinobr@mail.com";
+    private static final String MAIL = "email@mail.com";
     private static final String SUBJECT = "AGROTECH DRONE";
     private static final String TOPIC = "gestaoagrotech";
 
